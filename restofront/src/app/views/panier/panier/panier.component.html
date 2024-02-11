@@ -1,0 +1,68 @@
+
+<div class="container-xxl py-5 bg-dark hero-header mb-5" >
+    <div class="container text-center my-5 pt-5 pb-4" >
+
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Panier</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item home active ss"><a href="#">ACCUEIL</a></li>
+
+                <li class="breadcrumb-item text-white active ss " aria-current="page"> <a href="lesresto" routerLink="/liste-resto">Les restaurants</a></li>
+            </ol>
+        </nav>
+    </div>
+  </div>
+
+  <ng-container *ngIf="products.length !=0">
+    <div class="card-table">
+       <div class="card-product">
+        <table class="table table-responisve">
+            <thead>
+                <tr class="column">
+                    <th>nom</th>
+                    <th> prix</th>
+                    <th>image</th>
+                    <th>quantité</th>
+
+                    <th>action</th>
+                </tr>
+            </thead>
+
+            <tbody >
+
+            <tr *ngFor="let item of products; let i=index;">
+                <td style="color:#000"   >{{item.name}}</td>
+                <td style="color:#000">{{item.price}}</td>
+                <td><img style="width: 120px;" src="{{baseurl + '/' + item.urlImage}}" alt=""></td>
+
+                <td >  <p class="quantity" style="color:#000">1</p> </td>
+                <!-- <td style="color:#000">{{ item.price}}</td> -->
+                <td><button style="background-color: #ff7300;" (click)="removeItem(item)" class="btn btn_primary"> <i class="fas fa-trash"  style="color: aliceblue;"></i></button></td>
+            </tr>
+
+        </tbody>
+        </table>
+
+         <td colspan="4"></td>
+         <button class="btn btn-primary commander" routerLink="/liste-resto/cmd"> Commander</button>
+         <button  routerLink="/liste-resto" class="btn btn-primary shop">Achetez plus</button>
+         <strong  class="gtotal" style="color: #000;">  grand total : {{grandTotal}}</strong>
+         <strong  class="gtotal" style="color: #000;" >  prix total : {{prixTotal}} </strong>
+       </div>
+    </div>
+  </ng-container>
+
+  <ng-container class="vide" *ngIf="products.length==0">
+    <div class="center">
+        <h4  style="color:#ff7300">
+            Votre panier est vide!</h4>
+        <br>
+        <h6  style="color:black">Ajoutez-y un menu maintenant !</h6>
+        <br>
+        <br>
+        <button routerLink="/liste-resto" class="btn btn-primary">
+            Achetez maintenant</button>
+    </div>
+  </ng-container>
+  <br>
+  <br><br>

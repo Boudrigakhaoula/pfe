@@ -1,0 +1,52 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Votre Compte</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a href="#" id="ac">Accueil</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Se connecter</li>
+            </ol>
+        </nav>
+    </div>
+  </div>
+
+
+
+  <!-- seconnecter Start -->
+  <div class="container-xxl py-5 px-0 wow fadeInUp " id="form" data-wow-delay="0.1s">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6 bg-dark d-flex align-items-center">
+            <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                <h5 class="section-title ff-secondary text-start  fw-normal" id="titre">Se Connecter</h5>
+                <h1 class="text-white mb-4">Votre Compte</h1>
+                <form>
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input ngModel name="email" type="email" class="form-control" id="email" placeholder="Votre adresse e-mail" #email>
+                                <label for="email">Tapez votre adresse e-mail </label>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input ngModel name="motdepasse" type="password" class="form-control" id="mot_passe" placeholder="Mot de passe" #password>
+                                <label for="mot_passe">Mot de passe</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button  class="btn btn-primary w-100 py-3" type="button" id="button" (click)="loginHandler(email.value, password.value)">Se Connecter</button>
+                        </div>
+                        <p style="color: white;">Vous n'avez pas encore de compte ? <a routerLink="/créer_compte">Créer un compte</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- seconnecter Start -->

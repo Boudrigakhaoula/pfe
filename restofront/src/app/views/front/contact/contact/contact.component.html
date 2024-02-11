@@ -1,0 +1,103 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Contact</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a href="#" id="ac">Accueil</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="Contact">Contact</li>
+            </ol>
+        </nav>
+    </div>
+  </div>
+  
+  <!-- Navbar & Hero End -->
+  
+  
+  
+  <!-- Contact Start -->
+  <div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h5 class="section-title ff-secondary text-center  fw-normal" id="titre">Contactez-nous</h5>
+        <h5 class="mb-5" style="color: rgba(0, 0, 0, 0.781);">Si tu veux ajouter ton restaurant sur notre site, il te suffit d'envoyer un message. Dans un délai de deux jours, si ton restaurant est accepté, nous te contacterons par téléphone.</h5>
+    </div>
+    <div class="row g-4">
+  
+  
+        <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+             <iframe class="position-relative rounded w-100 h-100"
+                src="/assets/Nous-Contacter.png"
+                frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+        <div class="col-md-6" >
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+                <form #Form="ngForm" (ngSubmit)="demandeAjouterResto(Form.value)">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text"  ngModel name="nameresto" class="form-control" id="name" placeholder="Votre nom">
+                                <label for="name"> nom </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email"  ngModel name="email" class="form-control" id="email" placeholder="Votre adresse e-mail">
+                                <label for="email"> Adresse e-mail</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text"  ngModel name="Adresse" class="form-control" id="name" placeholder="Votre nom">
+                                <label for="name"> Adresse</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" ngModel name="ville" class="form-control" id="name" placeholder="Votre nom">
+                                <label for="name"> Ville</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" ngModel name="numerotel" class="form-control" id="name" placeholder="Votre nom">
+                                <label for="name">numéro de téléphone</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text"  ngModel name="instagram" class="form-control" id="name" placeholder="Votre nom">
+                                <label for="name"> Instagram</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text"  ngModel name="facebook"  class="form-control" id="name" placeholder="Votre nom">
+                                <label for="name"> Facebook</label>
+                            </div>
+                        </div>
+                      
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" ngModel name="motdepasse" class="form-control" id="name" placeholder="Votre nom">
+                                <label for="name">Mot de passe</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" ngModel name="objet"  id="subject" placeholder="Objet">
+                                <label for="subject">Objet</label>
+                            </div>
+                        </div>
+                      
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit" id ="button">Envoyer un message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <!-- Contact End -->

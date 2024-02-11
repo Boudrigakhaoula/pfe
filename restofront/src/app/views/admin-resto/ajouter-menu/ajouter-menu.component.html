@@ -1,0 +1,54 @@
+
+<div class="container-fluid content-inner pb-0" style="background-color: #19191A;">
+
+    <div>
+       <div class="row"style="background-color: #19191A;">
+
+          <div class="  col-md-10 " >
+             <div class="card"style="background-color:#202022;border-color:  rgba(240, 248, 255, 0.432);">
+                <div class="card-header d-flex justify-content-between">
+
+                   <div class="header-title" s>
+                      <h4 class="card-title" style="color: #fa9333;">Ajouter un nouveau menu</h4>
+                   </div>
+
+                </div>
+                <div class="card-body">
+                   <div class="new-user-info">
+                     <form>
+                        <div class="row g-3 ">
+                            <div class="form-group col-md-8"style="color: rgba(240, 248, 255, 0.432);;">
+                               <label class="form-label" for="fname">Nom du menu :</label>
+                               <input ngModel name="name" type="text" class="form-control1" id="fname" placeholder="Nom du menu" #Name>
+                            </div>
+
+                            <div class="form-group col-md-8"style="color: rgba(240, 248, 255, 0.432);;">
+                              <label class="form-label" for="fprix">Prix :</label>
+                              <input ngModel name="price" type="text" class="form-control1" id="fprix" placeholder="Prix" #Prix>
+                           </div>
+                         </div>
+
+                         <hr>
+                         <h5 class="mb-3">Photo de menu</h5>
+                         <div class="row">
+
+
+                            <div class="form-group"style="color: rgba(240, 248, 255, 0.432);;">
+                              <label for="exampleFormControlFile1"></label>
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1" (change)="select($event)" name="image">
+                            </div>
+
+
+
+
+                         </div>
+
+                         <button type="button" class="btn btn-primary" style="background-color: #FF971D;border-color: #FF971D;" (click)="Ajouter(Name.value, Prix.value)">Ajouter un nouveau menu</button>
+                      </form>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    </div>

@@ -1,0 +1,48 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Les restaurants</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item" ><a href="#" id="ac" style="color:  #FF971D;">Accueil</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">nos restaurants</li>
+            </ol>
+            <ol>
+
+            </ol>
+        </nav>
+    </div>
+  </div>
+  <!-- Navbar & Hero End -->
+
+<
+  <!-- resto Start -->
+  <div class="container-xxl pt-5 pb-3">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h5 id="off" class="section-title ff-secondary text-center  fw-normal">Nos restaurants</h5><br><br>
+    </div>
+    <!-- search -->
+    <!-- <app-search></app-search> -->
+
+    <div class="row g-4" >
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" *ngFor="let item of dataArray">
+            <div class="team-item text-center rounded overflow-hidden" >
+                <div class="rounded-circle overflow-hidden m-4">
+                    <img class="img-fluid" [src]="baseUrl + '/' +  item.UrlImage" alt="" [routerLink]="'menu-pirate/' + item._id">
+                </div>
+                <h5 class="mb-0 " style="color: black;">{{item.name}}</h5>
+                <small style="color: black;">{{item.ville}}</small>
+                <div class="d-flex justify-content-center mt-3">
+                 
+                    <a class="btn btn-square btn-p mx-1" id="id" [routerLink]="'det-pirate/' + item._id"><i class="fab fa-det">
+                        <svg fill="#ff7300" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg>
+                    </i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+

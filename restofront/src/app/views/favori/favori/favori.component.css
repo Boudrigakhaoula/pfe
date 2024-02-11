@@ -1,0 +1,28 @@
+
+
+
+.center{
+    text-align: center;
+   }
+   .column{
+      
+        background-color:  #ff7300 ;
+        color: white;
+        margin-left: 50%;
+   }
+   .quantity{
+ margin-left: 12%;
+   }
+  .deleteAll{
+    margin-left: 7%;
+  }
+  .shop{
+    margin-left: 7%;
+  }
+  .commander{
+    margin-left: 7%;
+  }
+  .gtotal{
+    margin-left: 7%;
+  }
+  

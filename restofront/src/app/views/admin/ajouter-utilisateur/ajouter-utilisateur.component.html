@@ -1,0 +1,74 @@
+<div class="container-fluid content-inner pb-0" style="background-color: #19191A;">
+   <div>
+      <div class="row"style="background-color: #19191A;">
+       <h4 class="text-center" style="color: #FF971D;">Informations concernant le nouvel administrateur de restaurant.</h4>
+         <div class="col-xl-12 col-lg-12">
+            <div class="card"style="background-color:#202022;">
+               <div class="card-header d-flex justify-content-between">
+                  <div class="header-title">
+
+                  </div>
+               </div>
+               <div class="card-body">
+                  <div class="new-user-info">
+                     <form>
+                        <div class="row">
+                           <div class="form-group col-md-6"style="color: rgba(240, 248, 255, 0.432);">
+                             <label class="form-label" for="nomresto">Nom restaurant:</label>
+                             <input ngModel name="nomresto" type="text" class="form-control1" id="cname" placeholder="Nom resto" #RestoName>
+                          </div>
+
+                           <div class="form-group col-md-6"style="color: rgba(240, 248, 255, 0.432);">
+                              <label class="form-label" for="adresse">Adresse </label>
+                              <input ngModel name="adresse" type="text" class="form-control1" id="add1" placeholder=" Adresse" #RestoAdress>
+                           </div>
+
+
+                           <div class="form-group col-md-6"style="color: rgba(240, 248, 255, 0.432);">
+                             <label class="form-label" for="ville">Ville:</label>
+                             <input  ngModel name="ville" type="text" class="form-control1" id="cname" placeholder="ville" #RestoVille>
+                          </div>
+                           <div class="form-group col-md-6"style="color: rgba(240, 248, 255, 0.432);">
+                              <label class="form-label" for="tel">Numéro de téléphone portable:</label>
+                              <input ngModel name="tel" type="text" class="form-control1" id="mobno" placeholder="Numéro de téléphone portable" #RestoPhone>
+                           </div>
+                           <div class="form-group col-md-6"style="color: rgba(240, 248, 255, 0.432);">
+                             <label class="form-label" for="urlfb">Url Facebook :</label>
+                             <input ngModel name="urlfb" type="text" class="form-control1" id="furl" placeholder="Facebook Url" #RestoUrlFace>
+                          </div>
+
+                          <div class="form-group col-md-6"style="color: rgba(240, 248, 255, 0.432);">
+                             <label class="form-label" for="urlinst">Url Instagram :</label>
+                             <input ngModel name="urlinst" type="text" class="form-control1" id="instaurl" placeholder="Instagram Url" #RestoUrlInsta>
+                          </div>
+
+                          <div class="form-group">
+                           <label for="exampleFormControlFile1" style="color: rgba(240, 248, 255, 0.432);">Photo resto:</label><br>
+                           <input (change)="ChangeUploadPhoto($event)" name="image" style="color: rgba(240, 248, 255, 0.432);" type="file" class="form-control-file" id="exampleFormControlFile1">
+                         </div>
+                        
+                        </div>
+                        <hr style="color: rgba(240, 248, 255, 0.432);">
+                        <h5 class="mb-3">Sécurité</h5>
+                        <div class="row">
+                         <div class="form-group col-md-6"style="color: rgba(240, 248, 255, 0.432);">
+                           <label class="form-label" for="email">Email:</label>
+                           <input ngModel name="email" type="email" class="form-control1" id="email" placeholder="Email" #RestoEmail>
+                        </div>
+
+                           <div class="form-group col-md-6"style="color: rgba(240, 248, 255, 0.432);">
+                              <label class="form-label" for="motdepasse">Mot de passe:</label>
+                              <input ngModel name="motdepasse" type="password" class="form-control1" id="pass" placeholder="Mot de passe" #RestoPassword>
+                           </div>
+                          
+                        </div>
+
+                        <button type="button" class="btn btn-primary"style="background-color: #FF971D;border-color: #FF971D;" (click)="ajouter(RestoName.value, RestoAdress.value, RestoVille.value, RestoPhone.value, RestoUrlFace.value, RestoUrlInsta.value, RestoEmail.value, RestoPassword.value)">Ajouter un nouvel admin resto</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>

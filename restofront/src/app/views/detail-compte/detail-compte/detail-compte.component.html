@@ -1,0 +1,86 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Détails du compte</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a routerLink="" id="ac" style="color:  #FF971D;">Accueil</a></li>
+                <li class="breadcrumb-item"><a routerLink="/liste-resto" id="ac" style="color:  #FF971D;">Les restaurants</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="compte">Détails du compte</li>
+            </ol>
+        </nav>
+    </div>
+  </div>
+
+  <!-- Navbar & Hero End -->
+
+
+
+
+
+  <!-- compte Start -->
+  <div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h5 class="section-title ff-secondary text-center  fw-normal" id="titre" >Bienvenue</h5>
+        <h4 class="mb-5" style="color:  #333332;">Bonjour <span style="color: var(--primary);">{{lastName}} {{firstName}}</span> </h4>
+
+    </div>
+    <div class="row g-4">
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s" routerLink="/liste-resto/editer-profil">
+            <div class="service-item rounded pt-3">
+                <div class="p-4">
+                    <i class=" col-md-4 offset-md-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-person-fill-gear" viewBox="0 0 16 16">
+                        <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Zm9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/>
+                      </svg>
+                </i>
+                    <h4 class="text-center"style="color:  #333332;">Editer le profil</h4><br>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" routerLink="/liste-resto/mod-passe">
+            <div class="service-item rounded pt-3">
+                <div class="p-4">
+                    <i class=" col-md-4 offset-md-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-person-fill-lock" viewBox="0 0 16 16">
+                        <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h5v-1a1.9 1.9 0 0 1 .01-.2 4.49 4.49 0 0 1 1.534-3.693C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Zm7 0a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2Zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1Z"/>
+                      </svg>
+                    </i>
+                    <h4 class="text-center"style="color:  #333332;">Modifier le mot de passe</h4>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" routerLink="/liste-resto/sup-compte">
+            <div class="service-item rounded pt-3">
+                <div class="p-4">
+                    <i class=" col-md-4 offset-md-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-person-fill-x" viewBox="0 0 16 16">
+                        <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-.646-4.854.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 0 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 .708-.708Z"/>
+                      </svg>
+                    </i>
+                    <h4 class="text-center"style="color:  #333332; ">Supprimer le compte</h4>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s" routerLink="/se_connecter">
+            <div class="service-item rounded pt-3">
+                <div class="p-4 ">
+                    <i class=" col-md-4 offset-md-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                          </svg>
+                    </i>
+
+                    <a type="submit" (click)="logout()"><h4 class="text-center"style="color:  #333332;margin-left:25%" >Déconnexion</h4></a><br><br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <!-- compte End -->

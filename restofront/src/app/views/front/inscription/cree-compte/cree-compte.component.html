@@ -1,0 +1,93 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Inscription</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a href="#" id="ac">Accueil</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Créer un compte</li>
+            </ol>
+        </nav>
+    </div>
+  </div>
+
+
+
+
+  <!-- inscription Start -->
+  <div class="container-xxl py-5 px-0 wow fadeInUp "  id="form" data-wow-delay="0.1s">
+    <div class="row justify-content-md-center ">
+
+
+        <div class="col-md-6 bg-dark d-flex align-items-center ">
+            <div class="p-5 wow fadeInUp " data-wow-delay="0.2s">
+                <h5 class="section-title ff-secondary text-start  fw-normal " id="titre">Inscription</h5>
+                <h1 class="text-white mb-4">Créer un compte</h1>
+                <form>
+                    <div class="row g-3 ">
+                        <div class="col-md-6 ">
+                            <div class="form-floating">
+                                <input ngModel type="text" class="form-control l1 " id="name" name="name" placeholder="Votre nom" #FirstName>
+                                <label for="name" >Votre nom</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input ngModel name="prenom" type="text" class="form-control" id="prenom" placeholder="Votre prénom" #LastName>
+                                <label for="prenom">Votre prénom</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating date" id="date3" data-target-input="nearest">
+
+                                <input ngModel name="datenais" type="date" class="form-control datetimepicker-input" id="datetime" placeholder="Date de naissance" data-target="#date3" data-toggle="datetimepicker" #DateBirth />
+                                <label for="datenais">Date de naissance</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input ngModel name="telephone" type="text" class="form-control" id="tel" placeholder="Numéro de téléphone" #Phone>
+                                <label for="telephone">Numéro de téléphone</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input ngModel name="email"  type="email" class="form-control" id="email" placeholder="Votre adresse e-mail" #Email>
+                                <label for="email">Votre adresse e-mail</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-floating">
+                            <input ngModel name="adress"  type="text" class="form-control" id="adress" placeholder="Votre adresse" #Adress>
+                            <label for="adress">Votre adresse</label>
+                          </div>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input ngModel name="motdepasse" type="password" class="form-control" id="mot_passe" placeholder="Mot de passe" #Password>
+                                <label for="motdepasse">Mot de passe</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input  ngModel name="confmotdepasse" type="password" class="form-control" id="c_mot_passe" placeholder="Confirmer le mot de passe" #ConfirmPassword>
+                                <label for="confmotdepasse">Confirmer le mot de passe</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="button" id="button" (click)="inscription(FirstName.value, LastName.value, DateBirth.value, Phone.value, Email.value, Adress.value, Password.value, ConfirmPassword.value)">Se Connecter</button>
+                        </div>
+                        <p style="color: white;">Vous avez déjà un compte ? <a routerLink="/se_connecter">Se connecter</a></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- inscription Start -->

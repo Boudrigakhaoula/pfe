@@ -1,0 +1,79 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Les informations des restaurants</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item" ><a href="#" id="ac" style="color:  #FF971D;">Accueil</a></li>
+                <li class="breadcrumb-item text-white active ss " aria-current="page"> <a href="lesresto" routerLink="/liste-resto">Les restaurant</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Nos Informations</li>
+            </ol>
+            <ol>
+
+            </ol>
+        </nav>
+    </div>
+  </div>
+  <!-- Navbar & Hero End -->
+  <div class="container-xxl pt-5 pb-3">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h5 id="off" class="section-title ff-secondary text-center  fw-normal">Nos Informations</h5><br><br>
+      </div>
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+          <div class="container">
+              <div class="row g-5 align-items-center">
+                  <div class="col-lg-6">
+                      <div class="row g-3">
+                          <div class="col-6 text-start">
+                              <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" [src]="baseurl + '/' + data.UrlImage">
+                          </div>
+                          <div class="col-6 text-start">
+                              <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" [src]="baseurl + '/' + data.UrlImage" style="margin-top: 13%;">
+                          </div>
+                          <div class="col-6 text-end">
+                              <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" [src]="baseurl + '/' + data.UrlImage">
+                          </div>
+                          <div class="col-6 text-end">
+                              <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" [src]="baseurl + '/' + data.UrlImage">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <h5 class="section-title ff-secondary text-start text- fw-normal" style="color: #FF7300;">À propos</h5>
+
+                      <h1 class="mb-4" style="color: rgba(0, 0, 0, 0.856);">Bienvenue dans <i class="fa fa-utensils text- me-2" style="color: #FF7300;"></i>{{data.name}}</h1>
+                    
+                      <p class="mb-4" style="color:#000000">Nous sommes fiers de proposer principalement une cuisine tunisienne et méditerranéenne, ainsi que des fruits de mer. Nous utilisons uniquement des ingrédients frais et de qualité pour préparer nos plats et nous accordons une attention particulière à la présentation pour offrir à nos clients une expérience culinaire inoubliable.</p>
+                      <div class="row g-4 mb-4">
+                          <div class="col-sm-6">
+                              <!-- <div class="d-flex align-items-center border-start border-5 border- px-3" style="border-color: #FF7300;"> -->
+                                  <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up"></h1>
+                                  <div class="ps-4">
+                                    <a href="" style="color: rgb(54, 54, 54);"><i class="bi bi-telephone-fill"style="color: #000000;"></i> {{data.phone}}</a><br>
+                                     <a href="" style="color: rgb(54, 54, 54);"><i class="bi bi-geo-alt-fill"style="color: #000000;"></i> {{data.address}}</a>
+
+
+                                  </div>
+
+                          </div>
+                          <div class="col-sm-6">
+                              <!-- <div class="d-flex align-items-center border-start border-5 border-primary px-3"> -->
+                                  <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up"></h1>
+                                  <div class="ps-4">
+                                    <a href="" style="color: rgb(54, 54, 54);"><i class="bi bi-facebook" style="color: #000000;"></i>{{data.urlFacebook}}</a><br>
+                                    <a href="" style="color: rgb(54, 54, 54);"><i class="bi bi-instagram" style="color: #000000;"></i>{{data.urlInstagram}}</a>
+
+
+                                  </div>
+                              <!-- </div> -->
+                          </div>
+                      </div>
+                      <a style="background-color: #FF7300; border-color: #FF7300;" class="btn btn-primary py-3 px-5 mt-2" [routerLink]="'/liste-resto/menu-pirate/' + data._id">Notre Menu</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- About End -->

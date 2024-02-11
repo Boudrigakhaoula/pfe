@@ -1,0 +1,58 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Modifier Mot De Passe</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a href="#" id="ac">Accueil</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Modifier Mot De Passe</li>
+            </ol>
+        </nav>
+    </div>
+  </div>
+  
+  
+  
+  
+  <!-- inscription Start -->
+  <div class="container-xxl py-5 px-0 wow fadeInUp "  id="form" data-wow-delay="0.1s">
+    <div class="row justify-content-md-center ">
+  
+  
+        <div class="col-md-6 bg-dark d-flex align-items-center ">
+            <div class="p-5 wow fadeInUp " data-wow-delay="0.2s">
+                <h5 class="section-title ff-secondary text-start  fw-normal " id="titre">Modifier Mot De Passe</h5>
+  <br><br>
+                <form >
+                    <div class="row g-3 ">
+  
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="password" ngModel  name="motdepasseActuel" class="form-control" id="mot_passe" placeholder="Mot de passe" #oldPassword>
+                                <label for="mot_passe">Mot de passe Actuel</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="password" ngModel  name="motdepasse" class="form-control" id="mot_passe" placeholder="Mot de passe" #newPassword>
+                                <label for="mot_passe">Mot de passe</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="password"  ngModel  name="confmotdepasse" class="form-control" id="c_mot_passe" placeholder="Confirmer le mot de passe" #confirmPassword>
+                                <label for="c_mot_passe">Confirmer le mot de passe</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="button" id="button" (click)="changePasswordHandler(oldPassword.value, newPassword.value, confirmPassword.value)">Enregistrer</button>
+                        </div>
+  
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  <!-- inscription Start -->
